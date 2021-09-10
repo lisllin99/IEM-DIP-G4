@@ -1,21 +1,28 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import * as React from 'react';
+import { StyleSheet, Text, View, Dimensions } from 'react-native';
+import BottomSheet from './components/BottomSheet';
+import Map from './screens/Map';
 
-export default function App() {
+const { width, height } = Dimensions.get("screen");
+
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <View style={{ width, height }}>
+      <View style={styles.container}>
+        <Map />
+      </View>
+      <BottomSheet />
+    </View >
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#f0f0f0',
     alignItems: 'center',
     justifyContent: 'center',
   },
 });
+
+export default App;
