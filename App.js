@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, Dimensions } from 'react-native';
 import BottomSheet from './components/BottomSheet';
 import Map from './screens/Map';
 
+
 const { width, height } = Dimensions.get("screen");
 
 const App = () => {
