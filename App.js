@@ -15,7 +15,8 @@ const App = () => {
   );
 };
 
-// show map in another tab
+// show map in another tab first need to settle bus timings etc
+
 /*const App = () => {
   return (
     <View style={{ width, height }}>
