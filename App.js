@@ -15,6 +15,7 @@ const App = () => {
   );
 };
 
+// show map in another tab
 /*const App = () => {
   return (
     <View style={{ width, height }}>
