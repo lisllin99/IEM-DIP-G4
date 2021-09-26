@@ -49,7 +49,11 @@ const BottomSheet = (props) => {
     // sets position of the bottom sheet in accordance to the alignment values
     const actionSheetIntropolate = alignment.interpolate({
         inputRange: [0, 1],
+<<<<<<< HEAD
         outputRange: [-height / 1.6 + 60, 0]
+=======
+        outputRange: [-height / 1.6 + 50, 0]
+>>>>>>> c08fa945ac2952a79eb62443240a4cc59a6adbd7
     });
 
 
@@ -117,8 +121,13 @@ const styles = StyleSheet.create({
         marginHorizontal: 10,
     },
     grabber: {
+<<<<<<< HEAD
         width: 50,
         borderTopWidth: 50,
+=======
+        width: 100,
+        borderTopWidth: 5,
+>>>>>>> c08fa945ac2952a79eb62443240a4cc59a6adbd7
         borderTopColor: '#aaa',
         marginLeft: "auto",
         marginRight: "auto",
