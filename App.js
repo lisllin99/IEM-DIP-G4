@@ -7,7 +7,12 @@ import 'react-native-gesture-handler';
 // import HomeScreen from './src/screens/HomeScreen';
 // import DestinationSearch from './src/screens/DestinationSearch';
 
+import { withAuthenticator } from 'aws-amplify-react-native'
 import RootNavigator from './src/navigation/Root.js'
+
+import Amplify from 'aws-amplify'
+import config from './src/aws-exports' //reference to correct file path
+Amplify.configure(config)
 
 
 const App : () => React$Node = () =>  {
@@ -48,4 +53,4 @@ const App : () => React$Node = () =>  {
   );
 };
 
-export default App;
+export default withAuthenticator(App);

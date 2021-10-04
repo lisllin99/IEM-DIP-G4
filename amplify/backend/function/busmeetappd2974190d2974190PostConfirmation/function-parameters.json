@@ -1,0 +1,19 @@
+{
+  "trigger": true,
+  "modules": [
+    "add-to-group",
+    "custom"
+  ],
+  "parentResource": "busmeetappd2974190d2974190",
+  "functionName": "busmeetappd2974190d2974190PostConfirmation",
+  "resourceName": "busmeetappd2974190d2974190PostConfirmation",
+  "parentStack": "auth",
+  "triggerEnvs": [],
+  "triggerDir": "C:\\Users\\melville.huang\\AppData\\Roaming\\npm\\node_modules\\@aws-amplify\\cli\\node_modules\\amplify-category-auth\\provider-utils\\awscloudformation\\triggers\\PostConfirmation",
+  "triggerTemplate": "PostConfirmation.json.ejs",
+  "triggerEventPath": "PostConfirmation.event.json",
+  "roleName": "busmeetappd2974190d2974190PostConfirmation",
+  "skipEdit": true,
+  "GROUP": "addfriends",
+  "enableCors": false
+}
