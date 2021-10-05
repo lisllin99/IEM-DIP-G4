@@ -1,18 +1,14 @@
 import React, { useEffect } from 'react';
 import {StatusBar, PermissionsAndroid, Platform} from 'react-native';
 import 'react-native-gesture-handler';
-//import Geolocation from '@react-native-community/geolocation';
-//import SearchResults from './src/screens/SearchResults';
 
-// import HomeScreen from './src/screens/HomeScreen';
-// import DestinationSearch from './src/screens/DestinationSearch';
 
-import { withAuthenticator } from 'aws-amplify-react-native'
+//import { withAuthenticator } from 'aws-amplify-react-native'
 import RootNavigator from './src/navigation/Root.js'
 
-import Amplify from 'aws-amplify'
+/*import Amplify from 'aws-amplify'
 import config from './src/aws-exports' //reference to correct file path
-Amplify.configure(config)
+Amplify.configure(config)*/
 
 
 const App : () => React$Node = () =>  {
@@ -53,4 +49,4 @@ const App : () => React$Node = () =>  {
   );
 };
 
-export default withAuthenticator(App);
+export default App /*withAuthenticator(App)*/;

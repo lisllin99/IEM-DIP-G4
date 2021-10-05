@@ -1,5 +1,5 @@
 import React from "react";
-import {View, Text, Pressable} from "react-native";
+import {View, Text, Pressable,TouchableOpacity} from "react-native";
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
@@ -29,30 +29,16 @@ const HomeSearch = (props) => {
            </Pressable>
 
            {/*All members*/}
-           <View style={styles.row}>
-               <View style = {styles.iconContainer}>
-               <MaterialCommunityIcons name={"face-profile"} size={16} color={"#fff"} />
-               </View>
-               <Text style = {styles.destinationText}>You</Text>
-           </View>
-
-           <View style={styles.row}>
-               <View style = {styles.iconContainer}>
-               <MaterialCommunityIcons name={"face-profile"} size={16} color={"#fff"} />
-               </View>
-               <Text style = {styles.destinationText}>Jerry</Text>
-           </View>
-
-           <View style={styles.row}>
-               <View style = {styles.iconContainer}>
-               <MaterialCommunityIcons name={"face-profile-woman"} size={16} color={"#fff"} />
-               </View>
-               <Text style = {styles.destinationText}>Sandy</Text>
-           </View>
-
+          <View style={styles.cardView}>
+            <Text style={{fontSize: 11}}>Start by tapping on the Add Friends + button below.</Text>
+            <TouchableOpacity style={styles.cardBtn}>
+              <Text style={{color: "#fff"}}>Add Friends +</Text>
+            </TouchableOpacity>
+          </View>
        </View>
 
     );
 };
+
 
 export default HomeSearch;

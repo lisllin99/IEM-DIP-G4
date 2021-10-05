@@ -7,6 +7,7 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import styles from "./styles.js"
 import {useRoute} from '@react-navigation/native';
+import CreateGroup from "../../components/CreateGroup/createGroup";
 
 
 const SearchResults = (props) => {
@@ -29,15 +30,15 @@ const SearchResults = (props) => {
            </View>
             
 
-            <View style={{height: Dimensions.get('window').height - 400}}>
-            <RouteMap origin ={originPlace} destination={destinationPlace}/>
+            <View style={{height: Dimensions.get('window').height - 550}}>
+                <RouteMap origin ={originPlace} destination={destinationPlace}/>
             </View>
             
             
-            <View style = {{height:400, backgroundColor:'#fff'}}>
+            <View style = {{height:500, backgroundColor:'#fff'}}>
             
          
-            <PeopleTypes />
+            <CreateGroup />
             </View>
         </View>
     );

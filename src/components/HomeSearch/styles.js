@@ -38,6 +38,25 @@ const styles = StyleSheet.create ({
         fontWeight: '600',
         fontSize: 20,
     },
+    cardView: {
+        width: 380,
+        alignSelf: "center",
+        alignItems: "center",
+        padding: 20,
+        marginTop: -19,
+        elevation: 5,
+        borderBottomRightRadius: 25,
+        borderBottomLeftRadius: 25,
+        paddingTop: 100,
+      },
+      cardBtn: {
+        padding: 8,
+        backgroundColor: "#8ca0d7",
+        borderRadius: 20,
+        width: 120,
+        alignItems: 'center',
+        marginTop: 60
+      },
 });
 
 export default styles;
