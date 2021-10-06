@@ -5,7 +5,7 @@ import MapViewDirections from 'react-native-maps-directions';
 
 const RouteMap = ({origin, destination}) => {
 
-    const GOOGLE_MAPS_APIKEY = 'AIzaSyAPiR_7iMHp27BKbIq1o70EkpyU36YGpjE'
+    const GOOGLE_MAPS_APIKEY = 'AIzaSyD6Np0xgB6tUpxIhYmncnZYB9GNQ-WUGCE'
 
     const originLoc = {
         latitude: origin.details.geometry.location.lat,

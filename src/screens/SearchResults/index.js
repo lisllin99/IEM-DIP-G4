@@ -30,7 +30,7 @@ const SearchResults = (props) => {
            </View>
             
 
-            <View style={{height: Dimensions.get('window').height - 550}}>
+            <View style={{height: Dimensions.get('window').height - 400}}>
                 <RouteMap origin ={originPlace} destination={destinationPlace}/>
             </View>
             

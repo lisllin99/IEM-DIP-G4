@@ -1,0 +1,32 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-busmeetapp-dev-131003-authRole",
+      "UnauthRoleArn": "arn:aws:iam::413843588014:role/amplify-busmeetapp-dev-131003-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::413843588014:role/amplify-busmeetapp-dev-131003-authRole",
+      "Region": "ap-southeast-1",
+      "DeploymentBucketName": "amplify-busmeetapp-dev-131003-deployment",
+      "UnauthRoleName": "amplify-busmeetapp-dev-131003-unauthRole",
+      "StackName": "amplify-busmeetapp-dev-131003",
+      "StackId": "arn:aws:cloudformation:ap-southeast-1:413843588014:stack/amplify-busmeetapp-dev-131003/ac5c9850-2663-11ec-a19a-06fec2628e64",
+      "AmplifyAppId": "d3rt6tb452h4by"
+    },
+    "categories": {
+      "function": {
+        "busmeetapp871226f0871226f0PostConfirmation": {
+          "deploymentBucketName": "amplify-busmeetapp-dev-131003-deployment",
+          "s3Key": "amplify-builds/busmeetapp871226f0871226f0PostConfirmation-7367322b615049727176-build.zip"
+        }
+      },
+      "auth": {
+        "busmeetapp871226f0871226f0": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d3rt6tb452h4by",
+          "type": "manual"
+        }
+      }
+    }
+  }
+}
