@@ -1,40 +1,53 @@
-import * as React from 'react';
-import { StyleSheet, Text, View, Dimensions } from 'react-native';
-//import BottomSheet from './components/BottomSheet';
-//import Map from './screens/Map';
-import NearMe from './screens/NearMe';
+import React, { useEffect } from 'react';
+import {StatusBar, PermissionsAndroid, Platform} from 'react-native';
+import 'react-native-gesture-handler';
 
+// for amplify imports
+// import { withAuthenticator } from 'aws-amplify-react-native'
+import RootNavigator from './src/navigation/Root.js'
 
-const { width, height } = Dimensions.get("screen");
+/* amplify imports
+import Amplify from 'aws-amplify'
+import config from './src/aws-exports' //reference to correct file path
+Amplify.configure(config)
+*/
 
-const App = () => {
+const App : () => React$Node = () =>  {
+
+  const androidPermission = async() => {
+    try {
+      const granted = await PermissionsAndroid.request(
+        PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
+        {
+          title: "BusMeet Location Permission",
+          message:
+            "BusMeet App needs access to your location " +
+            "so you can meet your friends!.",
+          buttonNeutral: "Ask Me Later",
+          buttonNegative: "Cancel",
+          buttonPositive: "OK"
+        }
+      );
+      if (granted === PermissionsAndroid.RESULTS.GRANTED) {
+        console.log("You can use the location");
+      } else {
+        console.log("Location permission denied");
+      }
+    } catch (err) {
+      console.warn(err);
+    }
+  }
+
+  useEffect (create = () => {
+     androidPermission();
+  }, {inputs:[]})
+
   return (
-    <View style = {styles.container}>
-        <NearMe/>
-    </View >
+    <>
+    <StatusBar barStyle = "dark-content" />
+    <RootNavigator />
+    </>
   );
 };
 
-// show map in another tab first need to settle bus timings etc
-
-/*const App = () => {
-  return (
-    <View style={{ width, height }}>
-      <View style={styles.container}>
-        <Map />
-      </View>
-      <BottomSheet />
-    </View >
-  );
-};*/
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#f0f0f0',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
-
-export default App;
+export default App /*withAuthenticator(App)*/;
