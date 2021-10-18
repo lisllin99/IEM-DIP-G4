@@ -7,7 +7,8 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import styles from "./styles.js"
 import {useRoute} from '@react-navigation/native';
-import CreateGroup from "../../components/CreateGroup/createGroup";
+// import CreateGroup from "../../components/CreateGroup/createGroup";
+import AllInvitees from "../../components/AllInvitees/AllInvitees";
 
 
 const SearchResults = (props) => {
@@ -24,10 +25,9 @@ const SearchResults = (props) => {
                     <Text style={styles.inputText}>Gek Poh Shopping Centre</Text>
                     <View style={styles.timeContainer}>
                         <AntDesign name={"clockcircle"} size={16} color={"#fff"} />
-                        <Text style={{fontWeight: "300", color: "#fff"}}>15min</Text>
-                        <MaterialIcons name = {'keyboard-arrow-down'} size={16} />
+                        <Text style={{fontWeight: "300", color: "#fff", marginRight: 10,}}>15min</Text>
                     </View>
-           </View>
+                </View>
             
 
             <View style={{height: Dimensions.get('window').height - 400}}>
@@ -36,9 +36,7 @@ const SearchResults = (props) => {
             
             
             <View style = {{height:500, backgroundColor:'#fff'}}>
-            
-         
-            <CreateGroup />
+                <AllInvitees />
             </View>
         </View>
     );

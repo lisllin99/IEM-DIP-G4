@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {View,Text, SafeAreaView} from 'react-native';
+//import {View,Text, SafeAreaView} from 'react-native';
 //import { TextInput } from 'react-native-gesture-handler';
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
 import PlaceRow from './PlaceRow';
@@ -8,8 +8,35 @@ import { useNavigation } from '@react-navigation/native';
 
 
 
+// import from react-native
+
+import {
+  StyleSheet,
+  Text,
+  View,
+  Image,
+  ScrollView,
+  TextInput,
+  TouchableOpacity,
+  ImageBackground,
+  Dimensions,
+  Modal,
+  Picker,
+  Alert,
+  SafeAreaView,
+} from "react-native";
+
+// import icons
+import { Entypo } from "@expo/vector-icons";
+import { AntDesign } from "@expo/vector-icons";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { Ionicons } from "@expo/vector-icons";
+import Addfriend from '../CreateGroup/createGroup';
+
 const DestinationSearch = (props) => {
 
+
+// variables for location
 
     const [originPlace, setOriginPlace] = useState(null);
     const [destinationPlace, setDestinationPlace] = useState(null);
@@ -52,6 +79,7 @@ const DestinationSearch = (props) => {
             listView:{
                 position: 'absolute',
                 top: 105,
+                backgroundColor: "#fff",
             },
             separator: styles.separator
         }}
@@ -81,6 +109,9 @@ const DestinationSearch = (props) => {
                 left: 10,
                 right: 10,
             },
+            listView : {
+              backgroundColor: "#fff",
+            },
             separator: styles.separator
         }}
         fetchDetails
@@ -101,12 +132,20 @@ const DestinationSearch = (props) => {
 
         <View style ={styles.square} />
 
+
+
         </View>
+
+        <Addfriend />
+
         </SafeAreaView>
+
+
 
         
 
     );
-};
+  };
+
 
 export default DestinationSearch;
