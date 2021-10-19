@@ -10,14 +10,14 @@ const Stack = createStackNavigator();
 const HomeNavigator = (props) => {
     return (
             <Stack.Navigator
-            screenOptions = {{
-                headerShown: false,
-            }}
-            initialRouteName = {"HomeScreen"}
-            >
-             <Stack.Screen name = {"HomeScreen"} component={HomeScreen} />
-            <Stack.Screen name = {"SearchResults"} component={SearchResults} />
-            <Stack.Screen name = {"DestinationSearch"} component={DestinationSearch} />
+                screenOptions = {{
+                    headerShown: false,
+                }}
+                initialRouteName = {"HomeScreen"}
+                >
+                <Stack.Screen name = {"HomeScreen"} component={HomeScreen} />
+                <Stack.Screen name = {"SearchResults"} component={SearchResults} />
+                <Stack.Screen name = {"DestinationSearch"} component={DestinationSearch} />
             </Stack.Navigator>
     );
 };

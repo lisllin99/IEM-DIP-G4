@@ -1,5 +1,5 @@
 import React from "react";
-import {View, Text, Dimensions} from 'react-native';
+// import {View, Text, Dimensions} from 'react-native';
 import RouteMap from "../../components/RouteMap";
 import PeopleTypes from "../../components/PeopleTypes";
 import AntDesign from 'react-native-vector-icons/AntDesign';
@@ -10,8 +10,31 @@ import {useRoute} from '@react-navigation/native';
 // import CreateGroup from "../../components/CreateGroup/createGroup";
 import AllInvitees from "../../components/AllInvitees/AllInvitees";
 
+import {
+    StyleSheet,
+    Text,
+    View,
+    Image,
+    ScrollView,
+    TextInput,
+    TouchableOpacity,
+    ImageBackground,
+    Dimensions,
+    Modal,
+    Picker,
+  } from "react-native";
+  
+  import { Entypo } from "@expo/vector-icons";
+  // import { AntDesign } from "@expo/vector-icons";
+  import { Ionicons } from "@expo/vector-icons";
+  // import { MaterialCommunityIcons } from "@expo/vector-icons";
+
 
 const SearchResults = (props) => {
+
+// class SearchResults extends React.Component {
+
+
     const route = useRoute();
     console.log(route.params);
     
@@ -28,18 +51,18 @@ const SearchResults = (props) => {
                         <Text style={{fontWeight: "300", color: "#fff", marginRight: 10,}}>15min</Text>
                     </View>
                 </View>
-            
 
             <View style={{height: Dimensions.get('window').height - 400}}>
-                <RouteMap origin ={originPlace} destination={destinationPlace}/>
+               <RouteMap origin ={originPlace} destination={destinationPlace}/>
             </View>
             
             
             <View style = {{height:500, backgroundColor:'#fff'}}>
-                <AllInvitees />
+                <AllInvitees/>
             </View>
         </View>
     );
 };
+// };
 
 export default SearchResults;

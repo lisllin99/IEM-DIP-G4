@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Pressable } from "react-native";
+import { View, Text, Pressable, Image } from "react-native";
 import {DrawerContentScrollView, DrawerItemList} from '@react-navigation/drawer';
 //import {Auth} from 'aws-amplify'; // sign out library
 
@@ -19,7 +19,16 @@ const CustomDrawer = (props) => {
             height: 50,
             borderRadius: 25,
             marginRight: 10,
+          }}>
+
+          <Image 
+          source={require("../assets/images/100.jpeg")}
+          style = {{
+            width: 50,
+            height: 50,
+            borderRadius: 25,
           }}/>
+          </View>
 
           <View>
             <Text style={{color: 'white', fontSize: 24}}>John</Text>

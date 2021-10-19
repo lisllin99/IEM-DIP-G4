@@ -8,6 +8,8 @@ import HomeScreen from "../screens/HomeScreen";
 import HomeNavigator from "./Home";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import CustomDrawer from "./CustomDrawer";
+import Nearby from "../screens/Nearby/Nearby";
+import NearbyNavigator from "./NearbyNavigator";
 
 const Drawer = createDrawerNavigator();
 
@@ -33,17 +35,7 @@ const RootNavigator = (props) => {
                 {() => <DummyScreen name={"Profile"} />}
                 </Drawer.Screen>
 
-                <Drawer.Screen name="Help">
-                {() => <DummyScreen name={"Help"} />}
-                </Drawer.Screen>
-
-                <Drawer.Screen name="Wallet">
-                {() => <DummyScreen name={"Wallet"} />}
-                </Drawer.Screen>
-
-                <Drawer.Screen name="Settings">
-                {() => <DummyScreen name={"Settings"} />}
-                </Drawer.Screen>
+                <Drawer.Screen name="Nearby" component = {NearbyNavigator} />
             </Drawer.Navigator>
         </NavigationContainer>
     );
