@@ -1,0 +1,12 @@
+type User @model {
+  id: ID!
+  username: String!
+  email: String!
+  latitude: Float
+  longitude: Float
+}
+
+
+
+
+

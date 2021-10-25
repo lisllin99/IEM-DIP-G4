@@ -3,14 +3,14 @@ import {StatusBar, PermissionsAndroid, Platform} from 'react-native';
 import 'react-native-gesture-handler';
 
 // for amplify imports
-// import { withAuthenticator } from 'aws-amplify-react-native'
+import { withAuthenticator } from 'aws-amplify-react-native'
 import RootNavigator from './src/navigation/Root.js'
 
-/* amplify imports
+// amplify imports
 import Amplify from 'aws-amplify'
 import config from './src/aws-exports' //reference to correct file path
 Amplify.configure(config)
-*/
+
 
 const App : () => React$Node = () =>  {
 
@@ -50,4 +50,4 @@ const App : () => React$Node = () =>  {
   );
 };
 
-export default App /*withAuthenticator(App)*/;
+export default /*App*/ withAuthenticator(App);

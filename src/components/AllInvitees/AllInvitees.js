@@ -432,7 +432,7 @@ class AllInvitees extends React.Component {
               style={{ flexDirection: "row", alignSelf: "flex-start" }}
             >
               <Image
-                source={require("../../assets/images/39.jpeg")}
+                source={require("../../assets/images/76.jpeg")}
                 style={styles.headerImg}
               />
               <View

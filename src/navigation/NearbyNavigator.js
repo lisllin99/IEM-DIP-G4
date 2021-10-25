@@ -2,7 +2,7 @@ import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import Nearby from "../screens/Nearby/Nearby";
 import BusTimings from "../screens/BusTimings/BusTimings";
-import BusStop from "../screens/BusStop/BusStop";
+import BusStop from "../screens/BusStops/BusStop";
 
 
 const Stack = createStackNavigator();
