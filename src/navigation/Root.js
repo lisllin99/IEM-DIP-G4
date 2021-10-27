@@ -10,6 +10,10 @@ import { createDrawerNavigator } from "@react-navigation/drawer";
 import CustomDrawer from "./CustomDrawer";
 import Nearby from "../screens/Nearby/Nearby";
 import NearbyNavigator from "./NearbyNavigator";
+//import App from "../screens/Chat/Chat";
+import messageChat from "../components/messageChat/messageChat"
+import SplashScreen from "../screens/SplashScreen/SplashScreen";
+
 
 const Drawer = createDrawerNavigator();
 
@@ -22,6 +26,7 @@ const DummyScreen = (props) => (
 
 const RootNavigator = (props) => {
     return (
+
         <NavigationContainer>
             <Drawer.Navigator
             drawerContent={
@@ -31,13 +36,20 @@ const RootNavigator = (props) => {
             >
                 <Drawer.Screen name = "Home" component={HomeNavigator} />
                 
-                <Drawer.Screen name="Profile">
-                {() => <DummyScreen name={"Profile"} />}
-                </Drawer.Screen>
-
+               {/*
+              <Drawer.Screen name="Chat">
+                {() => <DummyScreen name={"Chat"} />}
+            </Drawer.Screen>
+               */}
+               
+                
+                
+                
+                <Drawer.Screen name = "Chat"  component = {messageChat} />
                 <Drawer.Screen name="Nearby" component = {NearbyNavigator} />
             </Drawer.Navigator>
         </NavigationContainer>
+
     );
 };
 

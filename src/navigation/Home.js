@@ -3,6 +3,10 @@ import { createStackNavigator } from "@react-navigation/stack";
 import DestinationSearch from "../screens/DestinationSearch";
 import SearchResults from "../screens/SearchResults";
 import HomeScreen from "../screens/HomeScreen";
+import messageChat from "../components/messageChat/messageChat"
+import SplashScreen from "../screens/SplashScreen/SplashScreen";
+
+
 
 
 const Stack = createStackNavigator();
@@ -14,7 +18,7 @@ const HomeNavigator = (props) => {
                     headerShown: false,
                 }}
                 initialRouteName = {"HomeScreen"}
-                >
+                >           
                 <Stack.Screen name = {"HomeScreen"} component={HomeScreen} />
                 <Stack.Screen name = {"SearchResults"} component={SearchResults} />
                 <Stack.Screen name = {"DestinationSearch"} component={DestinationSearch} />

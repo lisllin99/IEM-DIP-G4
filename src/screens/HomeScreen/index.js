@@ -69,7 +69,7 @@ return (
             onPress={() => this.setState({ modalVisible: !modalVisible })}
             >
           <Image
-            source={require("../../assets/images/Picture91.png")}
+            source={require("../../assets/images/notificon-removebg-preview.png")}
             style={styles.notificationIcon}
           />
         </TouchableOpacity>
@@ -79,7 +79,7 @@ return (
         onPress={() => this.setState({ modalVisible2: !modalVisible2 })}
         >
           <Image
-            source={require("../../assets/images/Picture92.png")}
+            source={require("../../assets/images/busicon-removebg-preview.png")}
             style={styles.notificationIcon2}
           />
         </TouchableOpacity>

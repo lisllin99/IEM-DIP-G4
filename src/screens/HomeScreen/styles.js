@@ -4,20 +4,20 @@ const styles = StyleSheet.create({
     notificationView: {
         position: "absolute",
         top: 80,
-        left: 355,
+        left: 340,
       },
       notificationIcon: {
-        width: 50,
-        height: 50,
+        width: 80,
+        height: 70,
       },
       notificationView2: {
         position: "absolute",
         top: 140,
-        left: 360,
+        left: 330,
       },
       notificationIcon2: {
-        width: 30,
-        height: 35,
+        width: 90,
+        height: 100,
       },
       removeImg: {
         width: 30,

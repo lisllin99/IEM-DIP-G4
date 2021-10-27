@@ -1,19 +1,19 @@
 import React, { useState, useCallback, useEffect } from 'react'
 import { GiftedChat } from 'react-native-gifted-chat'
  
-export default function Example() {
+export default function messageChat() {
   const [messages, setMessages] = useState([]);
  
   useEffect(() => {
     setMessages([
       {
         _id: 1,
-        text: 'Hello developer',
+        text: 'Hello are you reaching?',
         createdAt: new Date(),
         user: {
           _id: 2,
           name: 'React Native',
-          avatar: 'https://placeimg.com/140/140/any',
+          avatar: require('../../assets/images/4.jpeg'),
         },
       },
     ])
