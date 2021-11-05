@@ -16,6 +16,7 @@ import SplashScreen from './src/screens/SplashScreen/SplashScreen.js';
 
 const App : () => React$Node = () =>  {
 //export default class App extends React.Component {
+  
 
   const androidPermission = async() => {
     try {
@@ -40,26 +41,18 @@ const App : () => React$Node = () =>  {
       console.warn(err);
     }
   }
-
-
+  
   useEffect (create = () => {
-     androidPermission();
+    androidPermission();
   }, {inputs:[]})
 
-
-  
-
-
-  
   return (
-    
     <>
     <StatusBar barStyle = "dark-content" />
     <RootNavigator/>
     </>
   );
 
-  
 };
 
 export default /*App*/ withAuthenticator(App);

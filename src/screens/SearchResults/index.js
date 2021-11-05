@@ -1,35 +1,16 @@
 import React from "react";
-// import {View, Text, Dimensions} from 'react-native';
 import RouteMap from "../../components/RouteMap";
-import PeopleTypes from "../../components/PeopleTypes";
 import AntDesign from 'react-native-vector-icons/AntDesign';
-import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import styles from "./styles.js"
 import {useRoute} from '@react-navigation/native';
-// import CreateGroup from "../../components/CreateGroup/createGroup";
 import AllInvitees from "../../components/AllInvitees/AllInvitees";
 
 import {
-    StyleSheet,
     Text,
     View,
-    Image,
-    ScrollView,
-    TextInput,
-    TouchableOpacity,
-    ImageBackground,
     Dimensions,
-    Modal,
-    Picker,
   } from "react-native";
   
-  import { Entypo } from "@expo/vector-icons";
-  // import { AntDesign } from "@expo/vector-icons";
-  import { Ionicons } from "@expo/vector-icons";
-  // import { MaterialCommunityIcons } from "@expo/vector-icons";
-
-
 const SearchResults = (props) => {
 
 // class SearchResults extends React.Component {
