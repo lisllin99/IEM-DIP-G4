@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Image, Dimensions, TouchableOpacity } from "react-native";
 import MapView, { Marker, PROVIDER_GOOGLE, AnimatedRegion } from 'react-native-maps';
 import MapViewDirections from 'react-native-maps-directions';
+import Notification from "./alert";
 
 import { API, graphqlOperation } from 'aws-amplify';
 import { listUsers } from '../../graphql/queries';
@@ -83,6 +84,17 @@ const RouteMap = ({ origin, destination }) => {
   })
 
   const { curLoc, destinationCords, coordinate } = state
+
+  const animate = (latitude, longitude) => {
+    const newCoordinate = { latitude, longitude };
+    if (Platform.OS == 'android') {
+      if (markerRef.current) {
+        markerRef.current.animateMarkerToCoordinate(newCoordinate, 7000);
+      }
+    } else {
+      coordinate.timing(newCoordinate).start();
+    }
+  }
 
   // Animation for a mock use-case
   const getLiveLocation1 = async () => {
@@ -172,40 +184,28 @@ const RouteMap = ({ origin, destination }) => {
   useEffect(() => {
     timeout = setTimeout(() => {
       getLiveLocation1()
-    }, 3000)
+    }, 20000)
   }, []);
 
 
   useEffect(() => {
     timeout = setTimeout(() => {
       getLiveLocation2()
-    }, 6000)
+    }, 23000)
   }, []);
 
   useEffect(() => {
     timeout = setTimeout(() => {
       getLiveLocation3()
-    }, 9000)
+    }, 26000)
   }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
       getLiveLocation()
-    }, 12000);
+    }, 29000);
     return () => clearInterval(interval)
   })
-
-
-  const animate = (latitude, longitude) => {
-    const newCoordinate = { latitude, longitude };
-    if (Platform.OS == 'android') {
-      if (markerRef.current) {
-        markerRef.current.animateMarkerToCoordinate(newCoordinate, 7000);
-      }
-    } else {
-      coordinate.timing(newCoordinate).start();
-    }
-  }
 
   return (
 
@@ -262,7 +262,9 @@ const RouteMap = ({ origin, destination }) => {
         </Marker>
       ))}
 
+      <Notification />
     </MapView>
+
 
   );
 };
