@@ -38,8 +38,8 @@ class AllInvitees extends React.Component {
     return (
       <View style={styles.container}>
         <StatusBar backgroundColor="#f6f5f5" style="dark" />
-        
-      <View style={{ flexDirection: "row", alignSelf: "center" }}>
+
+        <View style={{ flexDirection: "row", alignSelf: "center" }}>
           <TouchableOpacity
             onPress={() => this.setState({ customStyleIndex: 0 })}
             style={[
@@ -97,8 +97,8 @@ class AllInvitees extends React.Component {
                 <Text style={{ fontSize: 18, fontWeight: "bold" }}>You</Text>
                 <Text style={{ fontSize: 10 }}>Next Stop: Yunnan Garden (641221)</Text>
               </View>
-              <View style={{width: 70, padding: 3, backgroundColor: "#C90B0B", alignItems: "center", alignSelf:"flex-end", marginHorizontal: 10, borderRadius: 10, marginBottom: 20,}}>
-              <Text style={{color: "white"}}>5 min</Text>
+              <View style={{ width: 70, padding: 3, backgroundColor: "#C90B0B", alignItems: "center", alignSelf: "flex-end", marginHorizontal: 10, borderRadius: 10, marginBottom: 20, }}>
+                <Text style={{ color: "white" }}>5 min</Text>
               </View>
             </TouchableOpacity>
 
@@ -123,8 +123,8 @@ class AllInvitees extends React.Component {
                 <Text style={{ fontSize: 18, fontWeight: "bold" }}>Cruella</Text>
                 <Text style={{ fontSize: 12 }}>Next Stop: Hall 4</Text>
               </View>
-              <View style={{width: 70, padding: 3, backgroundColor: "#117639", alignItems: "center", alignSelf:"flex-end", marginHorizontal: 90, borderRadius: 10, marginBottom: 20,}}>
-              <Text style={{color: "white"}}>3 min</Text>
+              <View style={{ width: 70, padding: 3, backgroundColor: "#117639", alignItems: "center", alignSelf: "flex-end", marginHorizontal: 90, borderRadius: 10, marginBottom: 20, }}>
+                <Text style={{ color: "white" }}>3 min</Text>
               </View>
             </TouchableOpacity>
 
@@ -145,8 +145,8 @@ class AllInvitees extends React.Component {
                 <Text style={{ fontSize: 18, fontWeight: "bold" }}>Kate</Text>
                 <Text style={{ fontSize: 12 }}>Next Stop: -</Text>
               </View>
-              <View style={{width: 70, padding: 3, backgroundColor: "#117639", alignItems: "center", alignSelf:"flex-end", marginHorizontal: 120, borderRadius: 10, marginBottom: 20,}}>
-              <Text style={{color: "white"}}>0 min</Text>
+              <View style={{ width: 70, padding: 3, backgroundColor: "#117639", alignItems: "center", alignSelf: "flex-end", marginHorizontal: 120, borderRadius: 10, marginBottom: 20, }}>
+                <Text style={{ color: "white" }}>0 min</Text>
               </View>
             </TouchableOpacity>
 
@@ -158,9 +158,9 @@ class AllInvitees extends React.Component {
             </TouchableOpacity>
           </View>
         )}
-      <View style = {{zIndex: 1,}}>
-        {customStyleIndex === 1 && <MessageChat />}
-      </View>
+        <View style={{ zIndex: 1, }}>
+          {customStyleIndex === 1 && <MessageChat />}
+        </View>
       </View>
     );
   }

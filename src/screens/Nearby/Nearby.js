@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { StatusBar } from "expo-status-bar";
-import MapView from "react-native-maps";
-import BusTimings from "../BusTimings/BusTimings";
+
 
 import {
   StyleSheet,
@@ -9,17 +8,8 @@ import {
   View,
   Image,
   ScrollView,
-  TextInput,
   TouchableOpacity,
-  ImageBackground,
-  Dimensions,
 } from "react-native";
-
-import { Entypo } from "@expo/vector-icons";
-import { AntDesign } from "@expo/vector-icons";
-import { MaterialCommunityIcons } from "@expo/vector-icons";
-import { Ionicons } from "@expo/vector-icons";
-import DateTimePickerModal from "react-native-modal-datetime-picker";
 
 class Nearby extends React.Component {
   constructor() {
@@ -56,183 +46,183 @@ class Nearby extends React.Component {
         </View>
 
         <ScrollView showsVerticalScrollIndicator={false}>
-        <TouchableOpacity style={styles.CardBox}>
-          <View style={{ flexDirection: "column" }}>
-            <Image source={require("../../assets/images/Vector.png")} />
-            <Text>102m</Text>
-          </View>
-          <View style={{ flexDirection: "column", marginHorizontal: 20 }}>
-            <Text
-              style={{ marginHorizontal: 10, fontWeight: "bold", fontSize: 16 }}
-            >
-              Opp. SPMS
-            </Text>
-            <View style={{ flexDirection: "row" }}>
-              <Text style={{ marginHorizontal: 10, marginVertical: 2 }}>
-                738009
-              </Text>
-              <Text style={{ marginHorizontal: 20, marginVertical: 2 }}>
-                NTU Campus
-              </Text>
+          <TouchableOpacity style={styles.CardBox}>
+            <View style={{ flexDirection: "column" }}>
+              <Image source={require("../../assets/images/Vector.png")} />
+              <Text>102m</Text>
             </View>
-          </View>
-        </TouchableOpacity>
-
-        <TouchableOpacity style={styles.CardBox}>
-          <View style={{ flexDirection: "column" }}>
-            <Image source={require("../../assets/images/Vector.png")} />
-            <Text>102m</Text>
-          </View>
-          <View style={{ flexDirection: "column", marginHorizontal: 20 }}>
-            <Text
-              style={{ marginHorizontal: 10, fontWeight: "bold", fontSize: 16 }}
-            >
-              Innovation Centre
-            </Text>
-            <View style={{ flexDirection: "row" }}>
-              <Text style={{ marginHorizontal: 10, marginVertical: 2 }}>
-                738009
+            <View style={{ flexDirection: "column", marginHorizontal: 20 }}>
+              <Text
+                style={{ marginHorizontal: 10, fontWeight: "bold", fontSize: 16 }}
+              >
+                Opp. SPMS
               </Text>
-              <Text style={{ marginHorizontal: 20, marginVertical: 2 }}>
-                NTU Campus
-              </Text>
+              <View style={{ flexDirection: "row" }}>
+                <Text style={{ marginHorizontal: 10, marginVertical: 2 }}>
+                  738009
+                </Text>
+                <Text style={{ marginHorizontal: 20, marginVertical: 2 }}>
+                  NTU Campus
+                </Text>
+              </View>
             </View>
-          </View>
-        </TouchableOpacity>
+          </TouchableOpacity>
 
-        <TouchableOpacity style={styles.CardBox}>
-          <View style={{ flexDirection: "column" }}>
-            <Image source={require("../../assets/images/Vector.png")} />
-            <Text>102m</Text>
-          </View>
-          <View style={{ flexDirection: "column", marginHorizontal: 20 }}>
-            <Text
-              style={{ marginHorizontal: 10, fontWeight: "bold", fontSize: 16 }}
-            >
-              Hall 7
-            </Text>
-            <View style={{ flexDirection: "row" }}>
-              <Text style={{ marginHorizontal: 10, marginVertical: 2 }}>
-                738009
-              </Text>
-              <Text style={{ marginHorizontal: 20, marginVertical: 2 }}>
-                NTU Campus
-              </Text>
+          <TouchableOpacity style={styles.CardBox}>
+            <View style={{ flexDirection: "column" }}>
+              <Image source={require("../../assets/images/Vector.png")} />
+              <Text>102m</Text>
             </View>
-          </View>
-        </TouchableOpacity>
-
-        <TouchableOpacity style={styles.CardBox}>
-          <View style={{ flexDirection: "column" }}>
-            <Image source={require("../../assets/images/Vector.png")} />
-            <Text>102m</Text>
-          </View>
-          <View style={{ flexDirection: "column", marginHorizontal: 20 }}>
-            <Text
-              style={{ marginHorizontal: 10, fontWeight: "bold", fontSize: 16 }}
-            >
-              Opp. Innovation Centre
-            </Text>
-            <View style={{ flexDirection: "row" }}>
-              <Text style={{ marginHorizontal: 10, marginVertical: 2 }}>
-                738009
+            <View style={{ flexDirection: "column", marginHorizontal: 20 }}>
+              <Text
+                style={{ marginHorizontal: 10, fontWeight: "bold", fontSize: 16 }}
+              >
+                Innovation Centre
               </Text>
-              <Text style={{ marginHorizontal: 20, marginVertical: 2 }}>
-                NTU Campus
-              </Text>
+              <View style={{ flexDirection: "row" }}>
+                <Text style={{ marginHorizontal: 10, marginVertical: 2 }}>
+                  738009
+                </Text>
+                <Text style={{ marginHorizontal: 20, marginVertical: 2 }}>
+                  NTU Campus
+                </Text>
+              </View>
             </View>
-          </View>
-        </TouchableOpacity>
+          </TouchableOpacity>
 
-
-        <TouchableOpacity style={styles.CardBox}>
-          <View style={{ flexDirection: "column" }}>
-            <Image source={require("../../assets/images/Vector.png")} />
-            <Text>102m</Text>
-          </View>
-          <View style={{ flexDirection: "column", marginHorizontal: 20 }}>
-            <Text
-              style={{ marginHorizontal: 10, fontWeight: "bold", fontSize: 16 }}
-            >
-              Hall 7
-            </Text>
-            <View style={{ flexDirection: "row" }}>
-              <Text style={{ marginHorizontal: 10, marginVertical: 2 }}>
-                738009
-              </Text>
-              <Text style={{ marginHorizontal: 20, marginVertical: 2 }}>
-                NTU Campus
-              </Text>
+          <TouchableOpacity style={styles.CardBox}>
+            <View style={{ flexDirection: "column" }}>
+              <Image source={require("../../assets/images/Vector.png")} />
+              <Text>102m</Text>
             </View>
-          </View>
-        </TouchableOpacity>
-
-        <TouchableOpacity style={styles.CardBox} onPress={() => this.props.navigation.navigate("BusTimings")}>
-          <View style={{ flexDirection: "column" }}>
-            <Image source={require("../../assets/images/Vector.png")} />
-            <Text>102m</Text>
-          </View>
-          <View style={{ flexDirection: "column", marginHorizontal: 20 }}>
-            <Text
-              style={{ marginHorizontal: 10, fontWeight: "bold", fontSize: 16 }}
-            >
-              Yunnan Gdn
-            </Text>
-            <View style={{ flexDirection: "row" }}>
-              <Text style={{ marginHorizontal: 10, marginVertical: 2 }}>
-                738009
+            <View style={{ flexDirection: "column", marginHorizontal: 20 }}>
+              <Text
+                style={{ marginHorizontal: 10, fontWeight: "bold", fontSize: 16 }}
+              >
+                Hall 7
               </Text>
-              <Text style={{ marginHorizontal: 20, marginVertical: 2 }}>
-                NTU Campus
-              </Text>
+              <View style={{ flexDirection: "row" }}>
+                <Text style={{ marginHorizontal: 10, marginVertical: 2 }}>
+                  738009
+                </Text>
+                <Text style={{ marginHorizontal: 20, marginVertical: 2 }}>
+                  NTU Campus
+                </Text>
+              </View>
             </View>
-          </View>
-        </TouchableOpacity>
-        
+          </TouchableOpacity>
 
-        <TouchableOpacity style={styles.CardBox}>
-          <View style={{ flexDirection: "column" }}>
-            <Image source={require("../../assets/images/Vector.png")} />
-            <Text>102m</Text>
-          </View>
-          <View style={{ flexDirection: "column", marginHorizontal: 20 }}>
-            <Text
-              style={{ marginHorizontal: 10, fontWeight: "bold", fontSize: 16 }}
-            >
-              WKWSCI
-            </Text>
-            <View style={{ flexDirection: "row" }}>
-              <Text style={{ marginHorizontal: 10, marginVertical: 2 }}>
-                738009
-              </Text>
-              <Text style={{ marginHorizontal: 20, marginVertical: 2 }}>
-                NTU Campus
-              </Text>
+          <TouchableOpacity style={styles.CardBox}>
+            <View style={{ flexDirection: "column" }}>
+              <Image source={require("../../assets/images/Vector.png")} />
+              <Text>102m</Text>
             </View>
-          </View>
-        </TouchableOpacity>
+            <View style={{ flexDirection: "column", marginHorizontal: 20 }}>
+              <Text
+                style={{ marginHorizontal: 10, fontWeight: "bold", fontSize: 16 }}
+              >
+                Opp. Innovation Centre
+              </Text>
+              <View style={{ flexDirection: "row" }}>
+                <Text style={{ marginHorizontal: 10, marginVertical: 2 }}>
+                  738009
+                </Text>
+                <Text style={{ marginHorizontal: 20, marginVertical: 2 }}>
+                  NTU Campus
+                </Text>
+              </View>
+            </View>
+          </TouchableOpacity>
 
-        <TouchableOpacity style={styles.CardBox}>
-          <View style={{ flexDirection: "column" }}>
-            <Image source={require("../../assets/images/Vector.png")} />
-            <Text>102m</Text>
-          </View>
-          <View style={{ flexDirection: "column", marginHorizontal: 20 }}>
-            <Text
-              style={{ marginHorizontal: 10, fontWeight: "bold", fontSize: 16 }}
-            >
-              Sch of Comm And Info
-            </Text>
-            <View style={{ flexDirection: "row" }}>
-              <Text style={{ marginHorizontal: 10, marginVertical: 2 }}>
-                738009
-              </Text>
-              <Text style={{ marginHorizontal: 20, marginVertical: 2 }}>
-                NTU Campus
-              </Text>
+
+          <TouchableOpacity style={styles.CardBox}>
+            <View style={{ flexDirection: "column" }}>
+              <Image source={require("../../assets/images/Vector.png")} />
+              <Text>102m</Text>
             </View>
-          </View>
-        </TouchableOpacity>
+            <View style={{ flexDirection: "column", marginHorizontal: 20 }}>
+              <Text
+                style={{ marginHorizontal: 10, fontWeight: "bold", fontSize: 16 }}
+              >
+                Hall 7
+              </Text>
+              <View style={{ flexDirection: "row" }}>
+                <Text style={{ marginHorizontal: 10, marginVertical: 2 }}>
+                  738009
+                </Text>
+                <Text style={{ marginHorizontal: 20, marginVertical: 2 }}>
+                  NTU Campus
+                </Text>
+              </View>
+            </View>
+          </TouchableOpacity>
+
+          <TouchableOpacity style={styles.CardBox} onPress={() => this.props.navigation.navigate("BusTimings")}>
+            <View style={{ flexDirection: "column" }}>
+              <Image source={require("../../assets/images/Vector.png")} />
+              <Text>102m</Text>
+            </View>
+            <View style={{ flexDirection: "column", marginHorizontal: 20 }}>
+              <Text
+                style={{ marginHorizontal: 10, fontWeight: "bold", fontSize: 16 }}
+              >
+                Yunnan Gdn
+              </Text>
+              <View style={{ flexDirection: "row" }}>
+                <Text style={{ marginHorizontal: 10, marginVertical: 2 }}>
+                  738009
+                </Text>
+                <Text style={{ marginHorizontal: 20, marginVertical: 2 }}>
+                  NTU Campus
+                </Text>
+              </View>
+            </View>
+          </TouchableOpacity>
+
+
+          <TouchableOpacity style={styles.CardBox}>
+            <View style={{ flexDirection: "column" }}>
+              <Image source={require("../../assets/images/Vector.png")} />
+              <Text>102m</Text>
+            </View>
+            <View style={{ flexDirection: "column", marginHorizontal: 20 }}>
+              <Text
+                style={{ marginHorizontal: 10, fontWeight: "bold", fontSize: 16 }}
+              >
+                WKWSCI
+              </Text>
+              <View style={{ flexDirection: "row" }}>
+                <Text style={{ marginHorizontal: 10, marginVertical: 2 }}>
+                  738009
+                </Text>
+                <Text style={{ marginHorizontal: 20, marginVertical: 2 }}>
+                  NTU Campus
+                </Text>
+              </View>
+            </View>
+          </TouchableOpacity>
+
+          <TouchableOpacity style={styles.CardBox}>
+            <View style={{ flexDirection: "column" }}>
+              <Image source={require("../../assets/images/Vector.png")} />
+              <Text>102m</Text>
+            </View>
+            <View style={{ flexDirection: "column", marginHorizontal: 20 }}>
+              <Text
+                style={{ marginHorizontal: 10, fontWeight: "bold", fontSize: 16 }}
+              >
+                Sch of Comm And Info
+              </Text>
+              <View style={{ flexDirection: "row" }}>
+                <Text style={{ marginHorizontal: 10, marginVertical: 2 }}>
+                  738009
+                </Text>
+                <Text style={{ marginHorizontal: 20, marginVertical: 2 }}>
+                  NTU Campus
+                </Text>
+              </View>
+            </View>
+          </TouchableOpacity>
         </ScrollView>
       </View>
     );

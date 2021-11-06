@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { StatusBar } from "expo-status-bar";
-import MapView from "react-native-maps";
 
 import {
   StyleSheet,
@@ -8,17 +7,8 @@ import {
   View,
   Image,
   ScrollView,
-  TextInput,
   TouchableOpacity,
-  ImageBackground,
-  Dimensions,
 } from "react-native";
-
-import { Entypo } from "@expo/vector-icons";
-import { AntDesign } from "@expo/vector-icons";
-import { MaterialCommunityIcons } from "@expo/vector-icons";
-import { Ionicons } from "@expo/vector-icons";
-import DateTimePickerModal from "react-native-modal-datetime-picker";
 
 class BusTimings extends React.Component {
   constructor() {

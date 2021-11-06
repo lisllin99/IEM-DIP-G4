@@ -5,14 +5,14 @@ import WalkthroughAppConfig from "./src/WalkthroughAppConfig";
 import DynamicAppStyles from "./src/DynamicAppStyles";
 import { Button } from "react-native-elements/dist/buttons/Button";
 //import styles from "../DestinationSearch/styles";
-import { StyleSheet , View} from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import RootNavigator from "../../navigation/Root";
-export default function SplashScreen({navigation}) {
-//class SplashScreen extends Component {
+export default function SplashScreen({ navigation }) {
+  //class SplashScreen extends Component {
 
 
-    const [colorScheme, setColorScheme] = useState(Appearance.getColorScheme());
-  
+  const [colorScheme, setColorScheme] = useState(Appearance.getColorScheme());
+
 
 
   useEffect(() => {
@@ -24,23 +24,23 @@ export default function SplashScreen({navigation}) {
 
 
   return (
-    <View style = {styles.container} onPress={() => navigation.navigate("RootNavigator")}>
-    <AppearanceProvider >
-      <WalkthroughScreen
-        appConfig={WalkthroughAppConfig}
-        appStyles={DynamicAppStyles}
-      />
-    </AppearanceProvider>
+    <View style={styles.container} onPress={() => navigation.navigate("RootNavigator")}>
+      <AppearanceProvider >
+        <WalkthroughScreen
+          appConfig={WalkthroughAppConfig}
+          appStyles={DynamicAppStyles}
+        />
+      </AppearanceProvider>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: "#fff",
-        marginTop: -30,
-      },
+  container: {
+    flex: 1,
+    backgroundColor: "#fff",
+    marginTop: -30,
+  },
 });
 
 //export default SplashScreen;

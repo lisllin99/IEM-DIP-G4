@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import {StatusBar, PermissionsAndroid, Platform, View} from 'react-native';
+import { StatusBar, PermissionsAndroid, Platform, View } from 'react-native';
 import 'react-native-gesture-handler';
 
 // for amplify imports
@@ -14,11 +14,8 @@ Amplify.configure(config)
 
 import SplashScreen from './src/screens/SplashScreen/SplashScreen.js';
 
-const App : () => React$Node = () =>  {
-//export default class App extends React.Component {
-  
-
-  const androidPermission = async() => {
+const App: () => React$Node = () => {
+  const androidPermission = async () => {
     try {
       const granted = await PermissionsAndroid.request(
         PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
@@ -41,18 +38,18 @@ const App : () => React$Node = () =>  {
       console.warn(err);
     }
   }
-  
-  useEffect (create = () => {
+
+  useEffect(create = () => {
     androidPermission();
-  }, {inputs:[]})
+  }, { inputs: [] })
 
   return (
     <>
-    <StatusBar barStyle = "dark-content" />
-    <RootNavigator/>
+      <StatusBar barStyle="dark-content" />
+      <RootNavigator />
     </>
   );
 
 };
 
-export default /*App*/ withAuthenticator(App);
+export default withAuthenticator(App);

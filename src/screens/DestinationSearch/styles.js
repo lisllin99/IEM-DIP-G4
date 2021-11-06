@@ -1,6 +1,6 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 
-const styles = StyleSheet.create ({
+const styles = StyleSheet.create({
     textInput: {
         padding: 10,
         backgroundColor: "#ebeef2",
@@ -11,19 +11,19 @@ const styles = StyleSheet.create ({
         borderColor: "#8CA0D7",
         shadowColor: "#000",
         shadowOffset: {
-	    width: 0,
-	    height: 2,
+            width: 0,
+            height: 2,
         },
         shadowOpacity: 0.25,
         shadowRadius: 3.84,
     },
 
     separator: {
-        
-            backgroundColor: '#dddddd',
-            height: 1,
-        
-    }, 
+
+        backgroundColor: '#dddddd',
+        height: 1,
+
+    },
     container: {
         padding: 10,
         height: '100%',
@@ -32,19 +32,19 @@ const styles = StyleSheet.create ({
         zIndex: 3,
     },
 
-    row : {
+    row: {
         flexDirection: 'row',
         alignItems: 'center',
-        marginVertical: 10,   
+        marginVertical: 10,
 
     },
-    iconContainer :{
-        backgroundColor : '#a2a2a2',
+    iconContainer: {
+        backgroundColor: '#a2a2a2',
         padding: 5,
         borderRadius: 50,
         marginRight: 15,
     },
-    locationText :{
+    locationText: {
 
     },
 
@@ -53,7 +53,7 @@ const styles = StyleSheet.create ({
         height: 5,
         backgroundColor: 'black',
         position: 'absolute',
-        top :20,
+        top: 20,
         left: 15,
         borderRadius: 5,
     },
@@ -63,7 +63,7 @@ const styles = StyleSheet.create ({
         height: 55,
         backgroundColor: '#919191',
         position: 'absolute',
-        top :25,
+        top: 25,
         left: 16.5,
     },
 
@@ -72,7 +72,7 @@ const styles = StyleSheet.create ({
         height: 5,
         backgroundColor: 'black',
         position: 'absolute',
-        top :80,
+        top: 80,
         left: 15,
     },
 });

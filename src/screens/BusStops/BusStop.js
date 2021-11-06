@@ -1,27 +1,15 @@
 import React from "react";
 import { StatusBar } from "expo-status-bar";
 import MapView from "react-native-maps";
-import { GiftedChat } from "react-native-gifted-chat";
 
 import {
   StyleSheet,
   Text,
   View,
   Image,
-  ScrollView,
-  TextInput,
   TouchableOpacity,
-  ImageBackground,
   Dimensions,
-  Modal,
-  Picker,
 } from "react-native";
-
-import { Entypo } from "@expo/vector-icons";
-import { AntDesign } from "@expo/vector-icons";
-import { Ionicons } from "@expo/vector-icons";
-import { MaterialCommunityIcons } from "@expo/vector-icons";
-import MessageChat from "./../../components/messageChat/messageChat";
 
 class BusStop extends React.Component {
   constructor() {
@@ -38,14 +26,6 @@ class BusStop extends React.Component {
     this.setState((prevState) => ({ ...prevState, customStyleIndex: index }));
   };
   render() {
-    const {
-      selectedIndex,
-      selectedIndices,
-      customStyleIndex,
-      cardDatails,
-      modalVisible,
-      modalVisible2,
-    } = this.state;
 
     console.log(this.props);
     return (
@@ -56,10 +36,10 @@ class BusStop extends React.Component {
           style={styles.CardBox}
           onPress={() => this.props.navigation.navigate("BusStop")}
         >
-          <View style={{ flexDirection: "column", marginHorizontal: 20,}}>
-            
+          <View style={{ flexDirection: "column", marginHorizontal: 20, }}>
+
             <Text
-              style={{top:15, marginLeft: 10, fontWeight: "bold", fontSize: 30, }}
+              style={{ top: 15, marginLeft: 10, fontWeight: "bold", fontSize: 30, }}
             >
               179
             </Text>

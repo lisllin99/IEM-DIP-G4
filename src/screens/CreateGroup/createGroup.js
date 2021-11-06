@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { StatusBar } from "expo-status-bar";
-import MapView from "react-native-maps";
 
 import {
   StyleSheet,
@@ -10,19 +9,12 @@ import {
   ScrollView,
   TextInput,
   TouchableOpacity,
-  ImageBackground,
-  Dimensions,
   Modal,
-  Picker,
   Alert,
 } from "react-native";
 
-import { Entypo } from "@expo/vector-icons";
-import { AntDesign } from "@expo/vector-icons";
-import { MaterialCommunityIcons } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons";
 import DateTimePickerModal from "react-native-modal-datetime-picker";
-// import moment from 'moment';
 
 class Addfriend extends React.Component {
   constructor() {
@@ -95,7 +87,7 @@ class Addfriend extends React.Component {
     console.log(this.props);
 
     return (
-      
+
       <View style={styles.container}>
         <StatusBar backgroundColor="#f6f5f5" style="dark" />
 
@@ -106,10 +98,10 @@ class Addfriend extends React.Component {
             marginTop: 30,
           }}
         >
-          
-    
-          
-          
+
+
+
+
         </View>
 
         <Modal
@@ -147,8 +139,8 @@ class Addfriend extends React.Component {
         </Modal>
 
         <View style={styles.searchSection}>
-          
-          
+
+
           <Ionicons
             style={{ position: "absolute", left: 70 }}
             name="time"
@@ -303,12 +295,12 @@ const styles = StyleSheet.create({
     borderColor: "#8CA0D7",
     shadowColor: "#000",
     shadowOffset: {
-	width: 0,
-	height: 2,
+      width: 0,
+      height: 2,
     },
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
-    
+
   },
   searchInput: {
     width: 350,
