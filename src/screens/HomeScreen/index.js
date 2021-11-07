@@ -2,6 +2,7 @@ import React from "react";
 import HomeMap from "../../components/HomeMap";
 import HomeSearch from "../../components/HomeSearch";
 import styles from "./styles.js"
+import { useNavigation } from "@react-navigation/native";
 
 import {
   Text,
@@ -47,8 +48,6 @@ class HomeScreen extends React.Component {
     } = this.state;
 
     console.log(this.props);
-
-
     return (
       <View>
         <View style={{ height: Dimensions.get('window').height - 400 }}>
@@ -159,7 +158,7 @@ class HomeScreen extends React.Component {
                 <Picker.Item label="20" value="20" />
               </Picker>
             </View>
-            <TouchableOpacity style={styles.boardBtn} onPress={() => this.props.navigation.navigate("AllInvitees")}>
+            <TouchableOpacity style={styles.boardBtn} onPress={() => this.props.navigation.navigate("DestinationSearch")}>
               <Text style={{ color: "white" }}>Board</Text>
             </TouchableOpacity>
 
@@ -218,7 +217,7 @@ class HomeScreen extends React.Component {
                 <Picker.Item label="20" value="20" />
               </Picker>
             </View>
-            <TouchableOpacity style={styles.transferBtn}>
+            <TouchableOpacity style={styles.transferBtn} onPress ={() => this.props.navigation.navigate("DestinationSearch")}>
               <Text style={{ color: "white" }}>Transfer</Text>
             </TouchableOpacity>
 
