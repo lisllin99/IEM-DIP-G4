@@ -212,7 +212,7 @@ const RouteMap = ({ origin, destination }) => {
     <MapView
       style={{ height: '100%', width: '100%' }}
       provider={PROVIDER_GOOGLE}
-      showsUserLocation={true}
+      showsUserLocation={false}
       followsUserLocation={true}
       initialRegion={{
         ...curLoc,

@@ -1,13 +1,10 @@
-import React, {useState} from "react";
-import { Button,View, Image, Text } from "react-native";
+import React from "react";
+import { View, Image, Text } from "react-native";
 import PropTypes from "prop-types";
 import AppIntroSlider from "react-native-app-intro-slider";
 import dynamicStyles from "./styles";
 import { useColorScheme } from "react-native-appearance";
-import { NavigationContainer, useNavigation } from "@react-navigation/native";
-import RootNavigator from "../../../../../navigation/Root";
-//import HomeNavigator from "../../../../../navigation/Home";
-
+import { useNavigation } from "@react-navigation/native";
 
 const WalkthroughScreen = (props) => {
   const appConfig = props.appConfig;
@@ -15,6 +12,12 @@ const WalkthroughScreen = (props) => {
   const colorScheme = useColorScheme();
   const styles = dynamicStyles(appStyles, colorScheme);
 
+
+  const navigation = useNavigation();
+
+  const goToHome = () => {
+    navigation.navigate('HomeScreen')
+  }
   const slides = appConfig.onboardingConfig.walkthroughScreens.map(
     (screenSpec, index) => {
       return {
@@ -32,7 +35,7 @@ const WalkthroughScreen = (props) => {
         style={styles.image}
         source={item.image}
       />
-      
+
       <View style={[styles.container1]}>
         <Text style={styles.title}>{item.title}</Text>
         <Text style={styles.text}>{item.text}</Text>
@@ -41,8 +44,7 @@ const WalkthroughScreen = (props) => {
   );
 
 
-    return (
-    
+  return (
     <AppIntroSlider
       data={slides}
       slides={slides}
@@ -51,7 +53,9 @@ const WalkthroughScreen = (props) => {
       showSkipButton={true}
       showDoneButton={true}
       showNextButton={true}
+      onDone={goToHome}
     />
+
   );
 };
 

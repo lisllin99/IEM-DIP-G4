@@ -3,25 +3,17 @@ import { AppearanceProvider, Appearance } from "react-native-appearance";
 import WalkthroughScreen from "./src/screens/WalkthroughScreen/WalkthroughScreen";
 import WalkthroughAppConfig from "./src/WalkthroughAppConfig";
 import DynamicAppStyles from "./src/DynamicAppStyles";
-import { Button } from "react-native-elements/dist/buttons/Button";
-//import styles from "../DestinationSearch/styles";
 import { StyleSheet, View } from 'react-native';
-import RootNavigator from "../../navigation/Root";
-export default function SplashScreen({ navigation }) {
-  //class SplashScreen extends Component {
 
+export default function SplashScreen1({ navigation }) {
 
   const [colorScheme, setColorScheme] = useState(Appearance.getColorScheme());
-
-
 
   useEffect(() => {
     Appearance.addChangeListener(({ colorScheme }) => {
       setColorScheme(colorScheme);
     });
   });
-
-
 
   return (
     <View style={styles.container} onPress={() => navigation.navigate("RootNavigator")}>

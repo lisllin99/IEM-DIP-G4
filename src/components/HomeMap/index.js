@@ -19,8 +19,8 @@ const HomeMap = (props) => {
                 coordinate={{ latitude: 1.3493957438584392, longitude: 103.69615309937721 }}
             >
                 <Image
-                    style={{ width: 20, height: 20, resizeMode: 'contain' }}
-                    source={require('../../assets/images/Avatar-Icon.jpeg')} />
+                    style={{ width: 40, height: 40, }}
+                    source={require('../../assets/images/100.jpeg')} />
             </Marker>
         </MapView>
 
