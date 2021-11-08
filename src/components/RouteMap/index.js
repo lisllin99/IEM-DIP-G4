@@ -184,26 +184,26 @@ const RouteMap = ({ origin, destination }) => {
   useEffect(() => {
     timeout = setTimeout(() => {
       getLiveLocation1()
-    }, 20000)
+    }, 6000/*20000*/)
   }, []);
 
 
   useEffect(() => {
     timeout = setTimeout(() => {
       getLiveLocation2()
-    }, 23000)
+    }, 7000/*23000*/)
   }, []);
 
   useEffect(() => {
     timeout = setTimeout(() => {
       getLiveLocation3()
-    }, 26000)
+    }, 8000/*26000*/)
   }, []);
 
   useEffect(() => {
     const interval = setInterval(() => {
       getLiveLocation()
-    }, 29000);
+    }, 9000/*29000*/);
     return () => clearInterval(interval)
   })
 

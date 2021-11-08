@@ -5,7 +5,7 @@ const Notification = () => {
   useEffect(() => {
     setTimeout(() => {
       Alert.alert('You have reached your destination!', 'Wait for your friends!');
-    }, 30000);
+    }, 10000/*30000*/);
   }, []);
   return (
     <View style={{justifyContent: 'center', alignItems: 'center'}}>
