@@ -48,7 +48,7 @@
   </p>
 </p>
 
-<p align="center"><img src="https://github.com/lisllin99/IEM-DIP-G4/tree/busmeet_v1/Demo.gif" width="300" height="500"/></p>
+<p align="center"><img src="https://github.com/lisllin99/IEM-DIP-G4/blob/busmeet_v1/Demo.gif" width="300" height="500"/></p>
 
 ## About The Project
 BusMeet Description
