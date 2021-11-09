@@ -48,11 +48,11 @@
   </p>
 </p>
 
-<p align="center"><img src="https://github.com/lisllin99/IEM-DIP-G4/blob/busmeet_v1/Demo.gif" width="300" height="500"/></p>
+<p align="center"><img src="https://github.com/lisllin99/IEM-DIP-G4/blob/busmeet_v1/Demo.gif" width="300" height="600"/></p>
 
 ## About BusMeet
 Busmeet is a mobile project done by Information Engineering and Media (IEM) students for their
-Design and Innovation Project module at Nanyang Technological University (NTU). We wanted to create create an integrated application where users can check bus information while interacting with other users, such as messaging, location sharing, and sharing their estimated time of arrival (ETA).
+Design and Innovation Project module at Nanyang Technological University (NTU). We wanted to create an integrated application where users can check bus information while interacting with other users, such as messaging, location sharing, and sharing their estimated time of arrival (ETA).
 
 
 ## Technological Stack
@@ -62,5 +62,5 @@ Design and Innovation Project module at Nanyang Technological University (NTU). 
 To get started with the project:
 1. Set up [Expo](https://expo.dev/)
 2. Clone this project to your working directory
-3. Run `npm install` in you work path
+3. Run `npm install` in your work path
 4. Run `expo start` and open the app using either the [Expo Go](https://expo.dev/client) app or an emulator
