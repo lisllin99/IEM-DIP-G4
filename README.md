@@ -38,7 +38,6 @@
     <a href="https://github.com/lisllin99/IEM-DIP-G4/tree/busmeet_v1/reports/use case diagram/Use Case.pdf">Use Case Diagram</a>
     ·
     <a href="https://github.com/lisllin99/IEM-DIP-G4/tree/busmeet_v1/reports/flow diagram/Flow Diagram.pdf">Flow Diagram</a>
-    .
     <br /> 
     
   <br />
