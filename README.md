@@ -50,8 +50,17 @@
 
 <p align="center"><img src="https://github.com/lisllin99/IEM-DIP-G4/blob/busmeet_v1/Demo.gif" width="300" height="500"/></p>
 
-## About The Project
-BusMeet Description
+## About BusMeet
+Busmeet is a mobile project done by Information Engineering and Media (IEM) students for their
+Design and Innovation Project module at Nanyang Technological University (NTU). We wanted to create create an integrated application where users can check bus information while interacting with other users, such as messaging, location sharing, and sharing their estimated time of arrival (ETA).
 
-## Our Aim
-Aim of BusMeet
+
+## Technological Stack
+[React Native] was used on the front end. [AWS Amplify](https://aws.amazon.com/amplify/) was also use for us to set up a serverless architecture, along with services such as [AppSync](https://aws.amazon.com/appsync/), [DynamoDB](https://aws.amazon.com/dynamodb/) and [AWS Lambda](https://aws.amazon.com/lambda/). [Figma](https://www.figma.com/) was also used for prototyping and creating static designs.
+
+## Get Started
+To get started with the project:
+1. Set up [Expo](https://expo.dev/)
+2. Clone this project to your working directory
+3. Run `npm install` in you work path
+4. Run `expo start` and open the app using either the [Expo Go](https://expo.dev/client) app or an emulator
