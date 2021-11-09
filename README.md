@@ -1,5 +1,5 @@
 # BusMeet
-## Check for buses! Meet your friends!.
+## Check for buses! Meet your friends!
 
 <!-- PROJECT LOGO -->
 <br />
@@ -28,20 +28,20 @@
     ·
     <a href="https://github.com/lisllin99/IEM-DIP-G4/tree/busmeet_v1/reports/presentation slides">Presentation Slides</a>
     ·
-    <a href="https://github.com/lisllin99/IEM-DIP-G4/tree/busmeet_v1/reports/user guide">User Guide</a>
+    <a href="https://github.com/lisllin99/IEM-DIP-G4/tree/busmeet_v1/reports/user guide/How-To Guide.pdf">User Guide</a>
     <br />
     
   <br />
-    <a href="https://github.com/lisllin99/IEM-DIP-G4/tree/busmeet_v1/reports/use case diagram">Use Case Diagram</a>
+    <a href="https://github.com/lisllin99/IEM-DIP-G4/tree/busmeet_v1/reports/use case diagram/Use Case.pdf">Use Case Diagram</a>
     ·
     <a href="https://github.com/lisllin99/IEM-DIP-G4/tree/busmeet_v1/reports/flow diagram">Flow Diagram</a>
     .
     <br /> 
     
   <br />
-    <a href= #>Figma Planner</a>
+    <a href="https://www.figma.com/file/burrFTjgfZm4VKm99SDVvF/BusLeh-APP?node-id=85%3A2">Figma Planner</a>
     ·
-    <a href= #>Initial Figma Prototype (UI)</a>
+    <a href= "https://www.figma.com/file/XXGu0V3CkSMpCFTwyoHAwD/BusLeh-App-2.0?node-id=0%3A1">Initial Figma Planner</a>
     <br />   
     
     
