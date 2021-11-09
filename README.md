@@ -56,7 +56,7 @@ Design and Innovation Project module at Nanyang Technological University (NTU). 
 
 
 ## Technological Stack
-[React Native] was used on the front end. [AWS Amplify](https://aws.amazon.com/amplify/) was also use for us to set up a serverless architecture, along with services such as [AppSync](https://aws.amazon.com/appsync/), [DynamoDB](https://aws.amazon.com/dynamodb/) and [AWS Lambda](https://aws.amazon.com/lambda/). [Figma](https://www.figma.com/) was also used for prototyping and creating static designs.
+[React Native](https://reactnative.dev/) was used on the front end. [AWS Amplify](https://aws.amazon.com/amplify/) was also use for us to set up a serverless architecture, along with services such as [AppSync](https://aws.amazon.com/appsync/), [DynamoDB](https://aws.amazon.com/dynamodb/) and [AWS Lambda](https://aws.amazon.com/lambda/). [Figma](https://www.figma.com/) was also used for prototyping and creating static designs.
 
 ## Get Started
 To get started with the project:
