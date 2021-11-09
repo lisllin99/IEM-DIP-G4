@@ -21,20 +21,21 @@
     ·
     <a href="https://github.com/lisllin99/IEM-DIP-G4/tree/busmeet_v1/reports/video">Video</a>
     ·
+    <a href="https://github.com/lisllin99/IEM-DIP-G4/tree/busmeet_v1/reports/poster">View Poster</a>
     <br />
 
   <br />
-    <a href="https://github.com/lisllin99/IEM-DIP-G4/tree/busmeet_v1/reports/poster">View Poster</a>
-    ·
     <a href="https://github.com/lisllin99/IEM-DIP-G4/tree/busmeet_v1/reports/presentation slides">Presentation Slides</a>
     ·
-    <a href="https://github.com/lisllin99/IEM-DIP-G4/tree/busmeet_v1/reports/user guide/How-To Guide.pdf">User Guide</a>
+    <a href="https://github.com/lisllin99/IEM-DIP-G4/tree/busmeet_v1/reports/user guide/User_Guide.pdf">User Guide</a>
     <br />
+    <a href="https://github.com/lisllin99/IEM-DIP-G4/tree/busmeet_v1/reports//how to guide/How-To Guide.pdf">How To Guide</a>
+    ·
     
   <br />
     <a href="https://github.com/lisllin99/IEM-DIP-G4/tree/busmeet_v1/reports/use case diagram/Use Case.pdf">Use Case Diagram</a>
     ·
-    <a href="https://github.com/lisllin99/IEM-DIP-G4/tree/busmeet_v1/reports/flow diagram">Flow Diagram</a>
+    <a href="https://github.com/lisllin99/IEM-DIP-G4/tree/busmeet_v1/reports/flow diagram/Flow Diagram.PNG">Flow Diagram</a>
     .
     <br /> 
     
