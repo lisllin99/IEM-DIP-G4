@@ -19,9 +19,9 @@
     <br />
     <a href="https://github.com/lisllin99/IEM-DIP-G4/tree/busmeet_v1/reports/group report">Final Report</a>
     ·
-    <a href="https://github.com/lisllin99/IEM-DIP-G4/tree/busmeet_v1/reports/video">Video</a>
+    <a href="https://github.com/lisllin99/IEM-DIP-G4/tree/busmeet_v1/reports/video/video.mp4">Video</a>
     ·
-    <a href="https://github.com/lisllin99/IEM-DIP-G4/tree/busmeet_v1/reports/poster">View Poster</a>
+    <a href="https://github.com/lisllin99/IEM-DIP-G4/tree/busmeet_v1/reports/poster/poster.pdf">View Poster</a>
     <br />
 
   <br />
