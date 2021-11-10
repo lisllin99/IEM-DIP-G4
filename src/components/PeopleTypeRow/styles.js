@@ -1,7 +1,7 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
-    container:{
+    container: {
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
     },
 
     image: {
-        height:50,
+        height: 50,
         width: 50,
         resizeMode: 'contain',
     },
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
 
     stop: {
         fontSize: 12,
-        color: '#5d5d5d',  
+        color: '#5d5d5d',
     },
 
     rightContainer: {
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: 'green',
     },
-    
+
     time: {
         color: '#fff',
     }

@@ -1,6 +1,6 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 
-const styles = StyleSheet.create ({
+const styles = StyleSheet.create({
     inputBox: {
         backgroundColor: '#ebeef2',
         borderRadius: 20,
@@ -8,7 +8,7 @@ const styles = StyleSheet.create ({
         padding: 5,
         flexDirection: 'row',
         justifyContent: 'space-between',
-        alignItems:'center',
+        alignItems: 'center',
     },
     inputText: {
         fontSize: 16,

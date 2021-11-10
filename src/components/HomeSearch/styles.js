@@ -1,6 +1,6 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 
-const styles = StyleSheet.create ({
+const styles = StyleSheet.create({
     inputBox: {
         backgroundColor: '#ebeef2',
         borderRadius: 20,
@@ -8,7 +8,7 @@ const styles = StyleSheet.create ({
         padding: 10,
         flexDirection: 'row',
         justifyContent: 'space-between',
-        alignItems:'center',
+        alignItems: 'center',
     },
     inputText: {
         fontSize: 20,
@@ -29,12 +29,12 @@ const styles = StyleSheet.create ({
         padding: 20,
     },
     iconContainer: {
-        backgroundColor:'#8CA0D7',
+        backgroundColor: '#8CA0D7',
         padding: 10,
         borderRadius: 25,
     },
     destinationText: {
-        marginLeft:30,
+        marginLeft: 30,
         fontWeight: '600',
         fontSize: 20,
     },
@@ -48,15 +48,15 @@ const styles = StyleSheet.create ({
         borderBottomRightRadius: 25,
         borderBottomLeftRadius: 25,
         paddingTop: 100,
-      },
-      cardBtn: {
+    },
+    cardBtn: {
         padding: 8,
         backgroundColor: "#8ca0d7",
         borderRadius: 20,
         width: 120,
         alignItems: 'center',
         marginTop: 60
-      },
+    },
 });
 
 export default styles;

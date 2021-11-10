@@ -1,20 +1,20 @@
 import React, { useEffect } from 'react';
-import {StatusBar, PermissionsAndroid, Platform} from 'react-native';
+import { StatusBar, PermissionsAndroid, } from 'react-native';
 import 'react-native-gesture-handler';
 
 // for amplify imports
-// import { withAuthenticator } from 'aws-amplify-react-native'
+import { withAuthenticator } from 'aws-amplify-react-native'
+
+// navigator imports
 import RootNavigator from './src/navigation/Root.js'
 
-/* amplify imports
+// amplify imports
 import Amplify from 'aws-amplify'
 import config from './src/aws-exports' //reference to correct file path
 Amplify.configure(config)
-*/
 
-const App : () => React$Node = () =>  {
-
-  const androidPermission = async() => {
+const App = () => {
+  const androidPermission = async () => {
     try {
       const granted = await PermissionsAndroid.request(
         PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
@@ -38,16 +38,17 @@ const App : () => React$Node = () =>  {
     }
   }
 
-  useEffect (create = () => {
-     androidPermission();
-  }, {inputs:[]})
+  useEffect(create = () => {
+    androidPermission();
+  }, { inputs: [] })
 
   return (
     <>
-    <StatusBar barStyle = "dark-content" />
-    <RootNavigator />
+      <StatusBar barStyle="dark-content" />
+      <RootNavigator />
     </>
   );
+
 };
 
-export default App /*withAuthenticator(App)*/;
+export default withAuthenticator(App);
