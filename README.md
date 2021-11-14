@@ -17,7 +17,7 @@
     <strong>Final Submission »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/lisllin99/IEM-DIP-G4/tree/busmeet_v1/reports/group report/IM3080_G4_Group Report.docx">Final Report</a>
+    <a href="https://github.com/lisllin99/IEM-DIP-G4/tree/busmeet_v1/reports/group report/IM3080_G4_Group Report.pdf">Final Report</a>
     ·
     <a href="https://www.youtube.com/watch?v=n4K5YgCtdGE">Promotional Video</a>
     ·
